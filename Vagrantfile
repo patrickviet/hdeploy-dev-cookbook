@@ -1,7 +1,7 @@
 # FIXME: add centos 6 or something similar.
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-14.04"
+  config.vm.box = "hdeploy-dev"
   config.ssh.insert_key = false
   
   config.vm.provider "virtualbox" do |v|
