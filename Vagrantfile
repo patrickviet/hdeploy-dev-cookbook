@@ -1,13 +1,12 @@
 # FIXME: add centos 6 or something similar.
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "hdeploy-dev"
+  config.vm.box = "hdeploy-dev.box"
   config.ssh.insert_key = false
   
   config.vm.provider "virtualbox" do |v|
-    v.memory = 1024
+    v.memory = 2048
     v.cpus = 4
-    v.gui = true
   end
   
   %w[
