@@ -6,7 +6,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 cd /home/vagrant/hdeploy/omnibus
-bin/omnibus build hdeploy-server
-/vagrant/link.sh
+bin/omnibus build hdeploy
 
 
